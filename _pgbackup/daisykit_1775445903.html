@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="luxury">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>DaisyUI Component Gallery – David Rose</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet"/>
+        <style>
+    .card-3d {
+      transform-style: preserve-3d;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-3d:hover {
+      transform: translateY(-6px) rotateX(6deg) rotateY(-6deg);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+    }
+  </style>
+    </head>
+    <body class="bg-base-100 text-base-content">
+        <!-- PAGE HEADER -->
+        <section class="max-w-6xl mx-auto px-4 py-8">
+            <div class="flex flex-wrap items-center justify-between gap-4">
+                <div>
+                    <h1 class="text-3xl font-extrabold tracking-widest">DAISYUI COMPONENT GALLERY</h1>
+                    <p class="text-sm text-base-content/70">Navbars · Heroes · Forms · Carousels · Buttons · 3D Cards · Footers</p>
+                </div>
+                <select class="select select-bordered select-sm" onchange="document.documentElement.setAttribute('data-theme', this.value)">
+                    <option disabled selected>Theme</option>
+                    <option value="luxury">Luxury</option>
+                    <option value="business">Business</option>
+                    <option value="dark">Dark</option>
+                    <option value="forest">Forest</option>
+                    <option value="cupcake">Cupcake</option>
+                    <option value="synthwave">Synthwave</option>
+                </select>
+            </div>
+        </section>
+        <hr class="border-base-300"/>
+        <!-- ================= NAVBARS (6) ================= -->
+        <section class="max-w-6xl mx-auto px-4 py-10 space-y-6">
+            <h2 class="text-2xl font-bold tracking-widest">NAVBARS (6)</h2>
+            <!-- NAV 1 – Simple Left Logo, Right Links -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <div class="navbar bg-base-100">
+                        <div class="flex-1"><a class="btn btn-ghost text-xl">BrandOne</a>
+                        </div>
+                        <div class="hidden md:flex gap-2"><a class="btn btn-ghost btn-sm">Home</a><a class="btn btn-ghost btn-sm">Work</a><a class="btn btn-ghost btn-sm">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- NAV 2 – Centered Logo -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <div class="navbar bg-base-100 justify-center gap-6"><a class="btn btn-ghost btn-sm">Home</a><a class="btn btn-ghost text-xl font-bold">CenterBrand</a><a class="btn btn-ghost btn-sm">About</a>
+                    </div>
+                </div>
+            </div>
+            <!-- NAV 3 – Split Nav -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <div class="navbar bg-base-100">
+                        <div class="flex gap-2"><a class="btn btn-ghost btn-sm">Overview</a><a class="btn btn-ghost btn-sm">Docs</a>
+                        </div><a class="btn btn-ghost text-xl">SplitBrand</a>
+                        <div class="flex gap-2"><a class="btn btn-ghost btn-sm">Login</a>
+                            <button class="btn btn-primary btn-sm">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- NAV 4 – With Search -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <div class="navbar bg-base-100">
+                        <div class="flex-1"><a class="btn btn-ghost text-xl">SearchBrand</a>
+                        </div>
+                        <div class="form-control w-full max-w-xs">
+                            <label class="input input-bordered input-sm flex items-center gap-2">
+                                <input type="text" class="grow" placeholder="Search"/>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- NAV 5 – Drawer / Mobile -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <div class="navbar bg-base-100">
+                        <div class="flex-none lg:hidden">
+                            <button class="btn btn-square btn-ghost">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="flex-1"><a class="btn btn-ghost text-xl">DrawerBrand</a>
+                        </div>
+                        <div class="hidden lg:flex gap-2"><a class="btn btn-ghost btn-sm">Features</a><a class="btn btn-ghost btn-sm">Pricing</a><a class="btn btn-ghost btn-sm">Blog</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- NAV 6 – Icon Heavy -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <div class="navbar bg-base-100">
+                        <div class="flex-1"><a class="btn btn-ghost text-xl">IconBrand</a>
+                        </div>
+                        <div class="flex gap-2">
+                            <button class="btn btn-ghost btn-circle"><span class="material-symbols-outlined">search</span>
+                            </button>
+                            <button class="btn btn-ghost btn-circle"><span class="material-symbols-outlined">notifications</span>
+                            </button>
+                            <button class="btn btn-primary btn-sm">Sign in</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="border-base-300"/>
+        <!-- ================= HEROES (6) ================= -->
+        <section class="max-w-6xl mx-auto px-4 py-10 space-y-6">
+            <h2 class="text-2xl font-bold tracking-widest">HERO SECTIONS (6)</h2>
+            <!-- HERO 1 – Left Copy / Right Image -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <section class="bg-base-100 px-6 py-10 grid md:grid-cols-2 gap-8 items-center">
+                        <div class="space-y-4">
+                            <h3 class="text-3xl font-bold">Left Copy, Right Image</h3>
+                            <p class="text-base-content/70">Classic marketing hero layout with strong CTA.</p>
+                            <div class="flex gap-3">
+                                <button class="btn btn-primary">Primary CTA</button>
+                                <button class="btn btn-outline">Secondary</button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="rounded-xl bg-base-200 h-40 flex items-center justify-center"><span class="text-sm text-base-content/60">Image Placeholder</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- HERO 2 – Right Copy / Left Image -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <section class="bg-base-100 px-6 py-10 grid md:grid-cols-2 gap-8 items-center">
+                        <div class="order-2 md:order-1">
+                            <div class="rounded-xl bg-base-200 h-40 flex items-center justify-center"><span class="text-sm text-base-content/60">Image Placeholder</span>
+                            </div>
+                        </div>
+                        <div class="space-y-4 order-1 md:order-2">
+                            <h3 class="text-3xl font-bold">Right Copy, Left Image</h3>
+                            <p class="text-base-content/70">Great for product shots or dashboards.</p>
+                            <button class="btn btn-primary">Get Started</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- HERO 3 – Centered -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <section class="bg-base-100 px-6 py-12 text-center space-y-4">
+                        <h3 class="text-3xl font-bold">Centered Hero</h3>
+                        <p class="max-w-xl mx-auto text-base-content/70">
+          Perfect for simple landing pages or announcements. </p>
+                        <div class="flex justify-center gap-3">
+                            <button class="btn btn-primary">Primary</button>
+                            <button class="btn btn-ghost">Learn more</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- HERO 4 – Background Image -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <section class="bg-cover bg-center" style="background-image:url('https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg');">
+                        <div class="bg-base-100/70 px-6 py-12 space-y-4">
+                            <h3 class="text-3xl font-bold">Background Image Hero</h3>
+                            <p class="max-w-lg text-base-content/80">
+            Overlay panel on top of a full‑bleed background. </p>
+                            <button class="btn btn-primary">Explore</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- HERO 5 – Card Overlay -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <section class="bg-base-200 px-6 py-12 flex justify-center">
+                        <div class="card bg-base-100 shadow-xl max-w-xl">
+                            <div class="card-body">
+                                <h3 class="card-title text-2xl">Card Overlay Hero</h3>
+                                <p class="text-base-content/70">Hero content inside a card for app‑style layouts.</p>
+                                <div class="card-actions">
+                                    <button class="btn btn-primary">Launch</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- HERO 6 – Split Diagonal (simulated) -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <section class="bg-base-100 px-6 py-10 grid md:grid-cols-2 gap-8 items-center">
+                        <div class="space-y-4">
+                            <h3 class="text-3xl font-bold">Diagonal Feel Hero</h3>
+                            <p class="text-base-content/70">Use color blocks to simulate diagonal energy.</p>
+                            <button class="btn btn-primary">See Details</button>
+                        </div>
+                        <div class="h-40 bg-gradient-to-tr from-primary to-secondary rounded-xl"></div>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <hr class="border-base-300"/>
+        <!-- ================= FORMS (6) ================= -->
+        <section class="max-w-6xl mx-auto px-4 py-10 space-y-6">
+            <h2 class="text-2xl font-bold tracking-widest">FORMS (6)</h2>
+            <!-- FORM 1 – Login -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <form class="bg-base-100 px-6 py-8 max-w-md space-y-4">
+                        <h3 class="text-xl font-bold">Login</h3>
+                        <label class="form-control"><span class="label-text">Email</span>
+                            <input type="email" class="input input-bordered"/>
+                        </label>
+                        <label class="form-control"><span class="label-text">Password</span>
+                            <input type="password" class="input input-bordered"/>
+                        </label>
+                        <button class="btn btn-primary w-full">Sign in</button>
+                    </form>
+                </div>
+            </div>
+            <!-- FORM 2 – Signup -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <form class="bg-base-100 px-6 py-8 max-w-md space-y-4">
+                        <h3 class="text-xl font-bold">Create account</h3>
+                        <label class="form-control"><span class="label-text">Name</span>
+                            <input type="text" class="input input-bordered"/>
+                        </label>
+                        <label class="form-control"><span class="label-text">Email</span>
+                            <input type="email" class="input input-bordered"/>
+                        </label>
+                        <label class="form-control"><span class="label-text">Password</span>
+                            <input type="password" class="input input-bordered"/>
+                        </label>
+                        <button class="btn btn-primary w-full">Sign up</button>
+                    </form>
+                </div>
+            </div>
+            <!-- FORM 3 – Contact -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <form class="bg-base-100 px-6 py-8 max-w-lg space-y-4">
+                        <h3 class="text-xl font-bold">Contact</h3>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <label class="form-control"><span class="label-text">First name</span>
+                                <input type="text" class="input input-bordered"/>
+                            </label>
+                            <label class="form-control"><span class="label-text">Last name</span>
+                                <input type="text" class="input input-bordered"/>
+                            </label>
+                        </div>
+                        <label class="form-control"><span class="label-text">Email</span>
+                            <input type="email" class="input input-bordered"/>
+                        </label>
+                        <label class="form-control"><span class="label-text">Message</span>
+                            <textarea class="textarea textarea-bordered"></textarea>
+                        </label>
+                        <button class="btn btn-primary">Send message</button>
+                    </form>
+                </div>
+            </div>
+            <!-- FORM 4 – Newsletter -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <form class="bg-base-100 px-6 py-6 flex flex-col sm:flex-row gap-3 items-center">
+                        <div class="flex-1 w-full">
+                            <label class="form-control w-full"><span class="label-text">Newsletter</span>
+                                <input type="email" class="input input-bordered w-full" placeholder="you@example.com"/>
+                            </label>
+                        </div>
+                        <button class="btn btn-primary w-full sm:w-auto">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <!-- FORM 5 – Filter / Search -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <form class="bg-base-100 px-6 py-6 grid md:grid-cols-4 gap-4 items-end">
+                        <label class="form-control md:col-span-2"><span class="label-text">Search</span>
+                            <input type="text" class="input input-bordered"/>
+                        </label>
+                        <label class="form-control"><span class="label-text">Category</span>
+                            <select class="select select-bordered">
+                                <option>All</option>
+                                <option>Design</option>
+                                <option>Development</option>
+                            </select>
+                        </label>
+                        <button class="btn btn-primary">Filter</button>
+                    </form>
+                </div>
+            </div>
+            <!-- FORM 6 – Multi-step (visual) -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <form class="bg-base-100 px-6 py-8 max-w-lg space-y-4">
+                        <h3 class="text-xl font-bold">Step 1 of 3</h3>
+                        <progress class="progress progress-primary w-full" value="33" max="100"></progress>
+                        <label class="form-control"><span class="label-text">Project name</span>
+                            <input type="text" class="input input-bordered"/>
+                        </label>
+                        <button class="btn btn-primary">Next step</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <hr class="border-base-300"/>
+        <!-- ================= CAROUSELS (6) ================= -->
+        <section class="max-w-6xl mx-auto px-4 py-10 space-y-6">
+            <h2 class="text-2xl font-bold tracking-widest">CAROUSELS (6)</h2>
+            <!-- CAROUSEL 1 – Full Width Images -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <div class="carousel w-full">
+                        <div id="c1-1" class="carousel-item relative w-full">
+                            <img src="https://via.placeholder.com/1200x300?text=Slide+1" class="w-full"/><a href="#c1-3" class="btn btn-circle absolute left-5 top-1/2">❮</a><a href="#c1-2" class="btn btn-circle absolute right-5 top-1/2">❯</a>
+                        </div>
+                        <div id="c1-2" class="carousel-item relative w-full">
+                            <img src="https://via.placeholder.com/1200x300?text=Slide+2" class="w-full"/><a href="#c1-1" class="btn btn-circle absolute left-5 top-1/2">❮</a><a href="#c1-3" class="btn btn-circle absolute right-5 top-1/2">❯</a>
+                        </div>
+                        <div id="c1-3" class="carousel-item relative w-full">
+                            <img src="https://via.placeholder.com/1200x300?text=Slide+3" class="w-full"/><a href="#c1-2" class="btn btn-circle absolute left-5 top-1/2">❮</a><a href="#c1-1" class="btn btn-circle absolute right-5 top-1/2">❯</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CAROUSEL 2 – Cards -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <div class="carousel carousel-center p-4 space-x-4 bg-base-100 rounded-box">
+                        <div class="carousel-item">
+                            <div class="card bg-base-200 w-64">
+                                <div class="card-body">
+                                    <h3 class="card-title text-sm">Card 1</h3>
+                                    <p class="text-xs">Carousel card layout.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card bg-base-200 w-64">
+                                <div class="card-body">
+                                    <h3 class="card-title text-sm">Card 2</h3>
+                                    <p class="text-xs">Another card.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card bg-base-200 w-64">
+                                <div class="card-body">
+                                    <h3 class="card-title text-sm">Card 3</h3>
+                                    <p class="text-xs">And another.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CAROUSEL 3 – Testimonials (static carousel) -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <div class="carousel w-full bg-base-100">
+                        <div class="carousel-item w-full flex flex-col items-center justify-center p-8 text-center">
+                            <p class="max-w-md text-sm italic">“Great testimonial layout.”</p><span class="text-xs mt-2">— Person One</span>
+                        </div>
+                        <div class="carousel-item w-full flex flex-col items-center justify-center p-8 text-center">
+                            <p class="max-w-md text-sm italic">“Another testimonial.”</p><span class="text-xs mt-2">— Person Two</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CAROUSEL 4 – Product Carousel -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <div class="carousel carousel-center p-4 bg-base-100 space-x-4 rounded-box">
+                        <div class="carousel-item">
+                            <div class="card bg-base-200 w-40">
+                                <div class="card-body">
+                                    <p class="text-xs font-semibold">Product 1</p>
+                                    <p class="text-xs">$29</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card bg-base-200 w-40">
+                                <div class="card-body">
+                                    <p class="text-xs font-semibold">Product 2</p>
+                                    <p class="text-xs">$39</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card bg-base-200 w-40">
+                                <div class="card-body">
+                                    <p class="text-xs font-semibold">Product 3</p>
+                                    <p class="text-xs">$49</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CAROUSEL 5 – Small Image Slider -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <div class="carousel w-full">
+                        <div class="carousel-item w-full">
+                            <img src="https://via.placeholder.com/800x200?text=Small+1" class="w-full"/>
+                        </div>
+                        <div class="carousel-item w-full">
+                            <img src="https://via.placeholder.com/800x200?text=Small+2" class="w-full"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CAROUSEL 6 – Avatar Carousel -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <div class="carousel carousel-center p-4 bg-base-100 space-x-4 rounded-box">
+                        <div class="carousel-item">
+                            <div class="avatar">
+                                <div class="w-16 rounded-full">
+                                    <img src="https://api.dicebear.com/9.x/identicon/svg?seed=1"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="avatar">
+                                <div class="w-16 rounded-full">
+                                    <img src="https://api.dicebear.com/9.x/identicon/svg?seed=2"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="avatar">
+                                <div class="w-16 rounded-full">
+                                    <img src="https://api.dicebear.com/9.x/identicon/svg?seed=3"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="border-base-300"/>
+        <!-- ================= BUTTONS (SAMPLES) ================= -->
+        <section class="max-w-6xl mx-auto px-4 py-10 space-y-6">
+            <h2 class="text-2xl font-bold tracking-widest">BUTTONS (VARIANTS)</h2>
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <div class="bg-base-100 px-6 py-6 flex flex-wrap gap-3">
+                        <button class="btn btn-primary">Primary</button>
+                        <button class="btn btn-secondary">Secondary</button>
+                        <button class="btn btn-accent">Accent</button>
+                        <button class="btn btn-outline">Outline</button>
+                        <button class="btn btn-ghost">Ghost</button>
+                        <button class="btn btn-glass">Glass</button>
+                        <button class="btn btn-primary btn-sm">Small</button>
+                        <button class="btn btn-primary btn-lg">Large</button>
+                        <button class="btn btn-circle btn-primary">+</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="border-base-300"/>
+        <!-- ================= HOVER 3D CARDS (6) ================= -->
+        <section class="max-w-6xl mx-auto px-4 py-10 space-y-6">
+            <h2 class="text-2xl font-bold tracking-widest">HOVER 3D CARDS (6)</h2>
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <div class="bg-base-100 px-6 py-8 grid md:grid-cols-3 gap-6">
+                        <!-- CARD 1 -->
+                        <div class="card bg-base-200 card-3d">
+                            <div class="card-body">
+                                <h3 class="card-title text-sm">3D Card 1</h3>
+                                <p class="text-xs">Simple tilt on hover.</p>
+                            </div>
+                        </div>
+                        <!-- CARD 2 -->
+                        <div class="card bg-base-200 card-3d">
+                            <div class="card-body">
+                                <h3 class="card-title text-sm">3D Card 2</h3>
+                                <p class="text-xs">Use for feature highlights.</p>
+                            </div>
+                        </div>
+                        <!-- CARD 3 -->
+                        <div class="card bg-base-200 card-3d">
+                            <div class="card-body">
+                                <h3 class="card-title text-sm">3D Card 3</h3>
+                                <p class="text-xs">Great for pricing or stats.</p>
+                            </div>
+                        </div>
+                        <!-- CARD 4 -->
+                        <div class="card bg-base-200 card-3d">
+                            <div class="card-body">
+                                <h3 class="card-title text-sm">3D Card 4</h3>
+                                <p class="text-xs">Add icons or avatars.</p>
+                            </div>
+                        </div>
+                        <!-- CARD 5 -->
+                        <div class="card bg-base-200 card-3d">
+                            <div class="card-body">
+                                <h3 class="card-title text-sm">3D Card 5</h3>
+                                <p class="text-xs">Use gradients for extra pop.</p>
+                            </div>
+                        </div>
+                        <!-- CARD 6 -->
+                        <div class="card bg-base-200 card-3d">
+                            <div class="card-body">
+                                <h3 class="card-title text-sm">3D Card 6</h3>
+                                <p class="text-xs">Perfect for portfolio tiles.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="border-base-300"/>
+        <!-- ================= FOOTERS (6) ================= -->
+        <section class="max-w-6xl mx-auto px-4 py-10 space-y-6">
+            <h2 class="text-2xl font-bold tracking-widest">FOOTERS (6)</h2>
+            <!-- FOOTER 1 – Minimal Center -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <footer class="footer footer-center p-6 bg-base-100 text-sm">
+                        <p>© 2024 Minimal Footer</p>
+                    </footer>
+                </div>
+            </div>
+            <!-- FOOTER 2 – Multi-column -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <footer class="footer p-8 bg-base-100 text-sm">
+                        <aside>
+                            <p class="font-bold">Brand</p>
+                            <p>Short description here.</p>
+                        </aside>
+                        <nav>
+                            <h6 class="footer-title">Product</h6><a class="link link-hover">Features</a><a class="link link-hover">Pricing</a>
+                        </nav>
+                        <nav>
+                            <h6 class="footer-title">Company</h6><a class="link link-hover">About</a><a class="link link-hover">Careers</a>
+                        </nav>
+                    </footer>
+                </div>
+            </div>
+            <!-- FOOTER 3 – Social Focused -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <footer class="footer footer-center p-6 bg-base-100 text-sm">
+                        <div class="flex gap-4"><a class="link link-hover">Twitter</a><a class="link link-hover">LinkedIn</a><a class="link link-hover">GitHub</a>
+                        </div>
+                        <p>Follow for more UI work.</p>
+                    </footer>
+                </div>
+            </div>
+            <!-- FOOTER 4 – Newsletter Footer -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <footer class="footer p-8 bg-base-100 text-sm">
+                        <aside>
+                            <p class="font-bold">Newsletter Footer</p>
+                            <p>Stay updated.</p>
+                        </aside>
+                        <form class="flex flex-col gap-2">
+                            <input type="email" class="input input-bordered input-sm" placeholder="you@example.com"/>
+                            <button class="btn btn-primary btn-sm">Subscribe</button>
+                        </form>
+                    </footer>
+                </div>
+            </div>
+            <!-- FOOTER 5 – App-style -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <footer class="footer footer-center p-4 bg-base-100 text-xs">
+                        <div class="flex gap-4"><a class="link link-hover">Home</a><a class="link link-hover">Dashboard</a><a class="link link-hover">Settings</a>
+                        </div>
+                        <p>App-style footer</p>
+                    </footer>
+                </div>
+            </div>
+            <!-- FOOTER 6 – Deco-ish -->
+            <div class="mockup-window border bg-base-300">
+                <div class="border-t border-base-300">
+                    <footer class="footer footer-center p-8 bg-base-100 text-sm">
+                        <div class="w-32 h-1 bg-gradient-to-r from-primary via-base-300 to-primary mb-2"></div>
+                        <p class="tracking-widest font-bold">DAVID ROSE</p>
+                        <p>UI · UX · DAISYUI SYSTEMS</p>
+                    </footer>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

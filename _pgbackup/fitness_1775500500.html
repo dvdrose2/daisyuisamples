@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="forest">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>PulseFit – Health & Fitness Coaching</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet"/>
+    </head>
+    <body class="min-h-screen flex flex-col bg-base-100">
+        <!-- Navbar -->
+        <header class="navbar bg-base-100 border-b border-base-300 sticky top-0 z-30">
+            <div class="flex-1">
+                <a class="btn btn-ghost text-xl font-extrabold tracking-tight">
+        Daisy<span class="text-primary">ui site</span> </a>
+            </div>
+            <div class="hidden md:flex gap-2">
+                <a class="btn btn-ghost btn-sm" target="_top" href="index.html">Home</a>
+                <a class="btn btn-ghost btn-sm">Coaches</a>
+                <a class="btn btn-ghost btn-sm">Success Stories</a>
+                <a class="btn btn-ghost btn-sm">Pricing</a>
+            </div>
+            <div class="flex-none gap-2">
+                <a class="btn btn-ghost btn-sm">Log in</a>
+                <button class="btn btn-primary btn-sm">Start free trial</button>
+                <div class="dropdown dropdown-end md:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-square btn-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-52">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a>Blogsite</a>
+                        </li>
+                        <li>
+                            <a>Business</a>
+                        </li>
+                        <li>
+                            <a>Shopping</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="flex-1">
+            <!-- Hero -->
+            <section class="relative w-full bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.pexels.com/photos/1552249/pexels-photo-1552249.jpeg');">
+                <!-- Dark overlay to improve contrast -->
+                <div class="absolute inset-0 bg-black/60"></div>
+                <!-- Content wrapper -->
+                <div class="relative max-w-6xl mx-auto px-4 py-12 lg:py-16 grid lg:grid-cols-2 gap-10 items-center">
+                    <!-- LEFT TRANSPARENT BOX -->
+                    <div class="bg-black/50 backdrop-blur-sm p-8 rounded-xl space-y-6 shadow-xl"><span class="badge badge-primary badge-outline">Personalized Coaching</span>
+                        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight text-white">
+        Stronger body, <span class="text-primary">clearer mind</span>, sustainable habits. </h1>
+                        <p class="text-lg text-white/80">
+        PulseFit combines 1:1 coaching, adaptive workouts, and nutrition guidance to help you build a lifestyle that lasts. </p>
+                        <div class="flex flex-wrap gap-3">
+                            <button class="btn btn-primary">Take the 2‑minute quiz</button>
+                            <button class="btn btn-outline text-white border-white">View training programs</button>
+                        </div>
+                        <div class="flex flex-wrap gap-6 items-center text-sm text-white/80">
+                            <div>
+                                <p class="font-semibold text-white">12,000+</p>
+                                <p>Members coached worldwide</p>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-white">4.9 / 5</p>
+                                <p>Average program rating</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- RIGHT TRANSPARENT BOX -->
+                    <div class="bg-black/50 backdrop-blur-sm p-8 rounded-xl shadow-xl">
+                        <div class="card bg-base-200/20 shadow-xl border border-white/20">
+                            <div class="card-body space-y-4">
+                                <h2 class="card-title text-white">Your weekly training snapshot</h2>
+                                <div class="grid grid-cols-3 gap-4 text-sm">
+                                    <div class="stat bg-black/40 rounded-box border border-white/20 text-white">
+                                        <div class="stat-title text-white/70">Workouts</div>
+                                        <div class="stat-value text-primary">5</div>
+                                        <div class="stat-desc text-white/60">This week</div>
+                                    </div>
+                                    <div class="stat bg-black/40 rounded-box border border-white/20 text-white">
+                                        <div class="stat-title text-white/70">Minutes</div>
+                                        <div class="stat-value text-primary">230</div>
+                                        <div class="stat-desc text-white/60">Active</div>
+                                    </div>
+                                    <div class="stat bg-black/40 rounded-box border border-white/20 text-white">
+                                        <div class="stat-title text-white/70">Consistency</div>
+                                        <div class="stat-value text-primary">92%</div>
+                                        <div class="stat-desc text-white/60">Last 30 days</div>
+                                    </div>
+                                </div>
+                                <div class="divider my-2"></div>
+                                <p class="text-xs text-white/70">
+            Syncs with Apple Health, Google Fit, and most major wearables. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Programs -->
+            <section class="bg-base-200/40 border-y border-base-300">
+                <div class="max-w-6xl mx-auto px-4 py-12 space-y-8">
+                    <div class="flex flex-wrap justify-between gap-4 items-end">
+                        <div>
+                            <h2 class="text-2xl font-semibold">Programs built around your life</h2>
+                            <p class="text-sm md:text-base text-base-content/70">
+              Choose a focus—or mix and match with your coach. </p>
+                        </div>
+                        <button class="btn btn-ghost btn-sm">See all programs</button>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="card bg-base-100 border border-base-300">
+                            <div class="card-body">
+                                <h3 class="card-title text-base">Strength & Performance</h3>
+                                <p class="text-sm text-base-content/70">
+                Progressive strength training tailored to your equipment and schedule. </p>
+                                <ul class="text-xs text-base-content/70 space-y-1 mt-2">
+                                    <li>• 3–5 sessions per week</li>
+                                    <li>• Video form checks</li>
+                                    <li>• Periodized programming</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 border border-base-300">
+                            <div class="card-body">
+                                <h3 class="card-title text-base">Fat Loss & Metabolic Health</h3>
+                                <p class="text-sm text-base-content/70">
+                Sustainable nutrition and training to improve energy, sleep, and body composition. </p>
+                                <ul class="text-xs text-base-content/70 space-y-1 mt-2">
+                                    <li>• Habit‑based coaching</li>
+                                    <li>• Flexible meal templates</li>
+                                    <li>• Weekly check‑ins</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 border border-base-300">
+                            <div class="card-body">
+                                <h3 class="card-title text-base">Mindful Movement</h3>
+                                <p class="text-sm text-base-content/70">
+                Mobility, low‑impact strength, and breathwork for long‑term joint health. </p>
+                                <ul class="text-xs text-base-content/70 space-y-1 mt-2">
+                                    <li>• Guided mobility flows</li>
+                                    <li>• Breathwork sessions</li>
+                                    <li>• Recovery tracking</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Coaches & Stories -->
+            <section class="max-w-6xl mx-auto px-4 py-12 grid lg:grid-cols-2 gap-10 items-start">
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-semibold">Coaches who actually know your name</h2>
+                    <p class="text-sm md:text-base text-base-content/70">
+          Every PulseFit coach works with a limited roster so you get real attention—not generic templates. </p>
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div class="card bg-base-200 border border-base-300">
+                            <div class="card-body">
+                                <div class="flex items-center gap-3">
+                                    <div class="avatar">
+                                        <div class="w-10 rounded-full">
+                                            <img src="https://images.pexels.com/photos/3760852/pexels-photo-3760852.jpeg" alt="Coach"/>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-sm">Alex Rivera</p>
+                                        <p class="text-xs text-base-content/60">Strength & Performance</p>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-base-content/70 mt-2">
+                CSCS, 8+ years coaching athletes and busy professionals. </p>
+                            </div>
+                        </div>
+                        <div class="card bg-base-200 border border-base-300">
+                            <div class="card-body">
+                                <div class="flex items-center gap-3">
+                                    <div class="avatar">
+                                        <div class="w-10 rounded-full">
+                                            <img src="https://images.pexels.com/photos/3823063/pexels-photo-3823063.jpeg" alt="Coach"/>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-sm">Maya Chen</p>
+                                        <p class="text-xs text-base-content/60">Metabolic Health</p>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-base-content/70 mt-2">
+                Registered dietitian specializing in sustainable habit change. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-semibold">Real members, real progress</h2>
+                    <div class="carousel w-full space-y-4">
+                        <div class="card bg-base-200 border border-base-300">
+                            <div class="card-body">
+                                <p class="text-sm text-base-content/70 italic">
+                “I stopped chasing 30‑day fixes. In 9 months, I’m stronger, sleeping better, and my bloodwork is the best it’s ever been.” </p>
+                                <p class="text-xs text-base-content/60 mt-2">— Jordan, 38 · Remote worker</p>
+                            </div>
+                        </div>
+                        <div class="card bg-base-200 border border-base-300">
+                            <div class="card-body">
+                                <p class="text-sm text-base-content/70 italic">
+                “The app keeps me accountable without feeling obsessive. My coach adjusts workouts around my travel schedule every week.” </p>
+                                <p class="text-xs text-base-content/60 mt-2">— Priya, 31 · Consultant</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Pricing CTA -->
+            <section class="bg-base-200/40 border-y border-base-300">
+                <div class="max-w-4xl mx-auto px-4 py-12 text-center space-y-4">
+                    <h2 class="text-2xl font-semibold">Start with a 14‑day free trial</h2>
+                    <p class="text-base-content/70">
+          Match with a coach, try the app, and see if PulseFit fits your life—no credit card required. </p>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <button class="btn btn-primary">Start free trial</button>
+                        <button class="btn btn-outline">Talk to a coach</button>
+                    </div>
+                    <p class="text-xs text-base-content/50">Cancel anytime. Keep your habit plan as a PDF.</p>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="footer footer-center p-6 bg-base-200 text-sm text-base-content/70">
+            <nav class="flex flex-wrap justify-center gap-4">
+                <a class="link link-hover">FAQ</a>
+                <a class="link link-hover">App</a>
+                <a class="link link-hover">Privacy</a>
+                <a class="link link-hover">Terms</a>
+            </nav>
+            <p>© <span id="year-fitness"></span> PulseFit Coaching. All rights reserved.</p>
+        </footer>
+        <script>
+    document.getElementById('year-fitness').textContent = new Date().getFullYear();
+  </script>
+    </body>
+</html>

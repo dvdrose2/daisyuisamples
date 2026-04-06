@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="luxury">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>David Rose — Art Deco Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet"/>
+        <style>
+    /* Art Deco geometric accents */
+    .deco-border {
+      border-image: linear-gradient(90deg, #d4af37, #ffffff20, #d4af37) 1;
+      border-width: 3px;
+      border-style: solid;
+    }
+    .deco-divider {
+      height: 3px;
+      background: linear-gradient(90deg, #d4af37, transparent, #d4af37);
+    }
+    .glow {
+      box-shadow: 0 0 20px #d4af3755;
+    }
+  </style>
+    </head>
+    <body class="min-h-screen bg-base-100 text-base-content flex flex-col">
+        <!-- NAVBAR -->
+        <header class="navbar bg-base-100 border-b border-base-300 sticky top-0 z-40">
+            <div class="flex-1"><a class="btn btn-ghost text-2xl font-extrabold tracking-widest">
+      DAVID <span class="text-primary">ROSE</span> </a>
+            </div>
+            <div class="hidden md:flex gap-3"><a class="btn btn-ghost btn-sm">Work</a><a class="btn btn-ghost btn-sm">About</a><a class="btn btn-ghost btn-sm">Contact</a>
+            </div>
+            <div class="flex-none">
+                <select class="select select-bordered select-sm" onchange="document.documentElement.setAttribute('data-theme', this.value)">
+                    <option disabled selected>Theme</option>
+                    <option value="luxury">Luxury (Default)</option>
+                    <option value="business">Business</option>
+                    <option value="dark">Dark</option>
+                    <option value="forest">Forest</option>
+                    <option value="cupcake">Cupcake</option>
+                    <option value="synthwave">Synthwave</option>
+                </select>
+            </div>
+        </header>
+        <!-- HERO -->
+        <section class="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12 items-center">
+            <!-- Left -->
+            <div class="space-y-6">
+                <div class="deco-divider w-32"></div>
+                <h1 class="text-5xl font-extrabold leading-tight tracking-wide">
+      Crafting <span class="text-primary">Modern Interfaces</span> 
+      with Timeless <span class="text-primary">Art Deco</span> Precision </h1>
+                <p class="text-lg text-base-content/70">
+      I’m David Rose — a multidisciplinary designer & developer specializing in 
+      DaisyUI systems, UI kits, and immersive digital experiences.  
+      This portfolio showcases my ability to blend modern frameworks with 
+      classic design principles. </p>
+                <div class="flex flex-wrap gap-4"><a class="btn btn-primary btn-lg glow">View My Work</a><a class="btn btn-outline btn-lg">Download Resume</a>
+                </div>
+                <div class="deco-divider w-48"></div>
+            </div>
+            <!-- Right -->
+            <div class="flex justify-center">
+                <div class="deco-border p-4 rounded-xl glow">
+                    <img src="ddrose2.png?text=Your+Photo+Here" class="rounded-lg shadow-xl" alt="David Rose Portrait Placeholder"/>
+                </div>
+            </div>
+        </section>
+        <!-- CAROUSEL -->
+        <section class="max-w-6xl mx-auto px-6 py-12">
+            <h2 class="text-3xl font-bold mb-6 tracking-widest">FEATURED PROJECTS</h2>
+            <div class="carousel w-full rounded-box deco-border">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="https://via.placeholder.com/1200x500?text=Blog+Landing+Page" class="w-full"/><a href="#slide4" class="btn btn-circle absolute left-5 top-1/2">❮</a><a href="#slide2" class="btn btn-circle absolute right-5 top-1/2">❯</a>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="https://via.placeholder.com/1200x500?text=Business+Data+Platform" class="w-full"/><a href="#slide1" class="btn btn-circle absolute left-5 top-1/2">❮</a><a href="#slide3" class="btn btn-circle absolute right-5 top-1/2">❯</a>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="https://via.placeholder.com/1200x500?text=Health+%26+Fitness+Landing" class="w-full"/><a href="#slide2" class="btn btn-circle absolute left-5 top-1/2">❮</a><a href="#slide4" class="btn btn-circle absolute right-5 top-1/2">❯</a>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="https://via.placeholder.com/1200x500?text=E-Commerce+Landing" class="w-full"/><a href="#slide3" class="btn btn-circle absolute left-5 top-1/2">❮</a><a href="#slide1" class="btn btn-circle absolute right-5 top-1/2">❯</a>
+                </div>
+            </div>
+        </section>
+        <!-- DAISYUI EXPERT SECTION -->
+        <section class="max-w-6xl mx-auto px-6 py-16 space-y-10">
+            <h2 class="text-3xl font-bold tracking-widest">DAISYUI EXPERTISE</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card bg-base-200 deco-border hover:scale-105 transition-transform">
+                    <div class="card-body">
+                        <h3 class="card-title">Design Systems</h3>
+                        <p>I build scalable, theme‑driven UI kits with reusable components.</p>
+                    </div>
+                </div>
+                <div class="card bg-base-200 deco-border hover:scale-105 transition-transform">
+                    <div class="card-body">
+                        <h3 class="card-title">Responsive Layouts</h3>
+                        <p>Pixel‑perfect across all devices with Tailwind + DaisyUI.</p>
+                    </div>
+                </div>
+                <div class="card bg-base-200 deco-border hover:scale-105 transition-transform">
+                    <div class="card-body">
+                        <h3 class="card-title">Component Engineering</h3>
+                        <p>Custom navbars, carousels, dashboards, and animations.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="deco-divider w-full"></div>
+            <div class="flex flex-wrap gap-3"><span class="badge badge-primary">DaisyUI</span><span class="badge badge-secondary">TailwindCSS</span><span class="badge badge-accent">Pinegrow</span><span class="badge badge-outline">UI Kits</span><span class="badge badge-outline">Dark Mode Systems</span><span class="badge badge-outline">Responsive Design</span>
+            </div>
+        </section>
+        <!-- FOOTER -->
+        <footer class="footer footer-center p-10 bg-base-200 text-base-content/70">
+            <p class="font-bold tracking-widest">DAVID ROSE</p>
+            <p>© <span id="year"></span> All Rights Reserved</p>
+        </footer>
+        <script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+    </body>
+</html>

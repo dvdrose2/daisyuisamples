@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>BrightCart – Modern Online Shop</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet"/>
+    </head>
+    <body class="min-h-screen flex flex-col bg-base-100">
+        <!-- Navbar -->
+        <header class="navbar bg-base-100 border-b border-base-300 sticky top-0 z-30">
+            <div class="flex-1"><a class="btn btn-ghost text-xl font-extrabold tracking-tight">
+        Daisy<span class="text-primary">ui</span> </a>
+            </div>
+            <div class="hidden md:flex gap-2"><a class="btn btn-ghost btn-sm">New</a><a class="btn btn-ghost btn-sm">Women</a><a class="btn btn-ghost btn-sm">Men</a><a class="btn btn-ghost btn-sm" href="index.html">Home</a><a class="btn btn-ghost btn-sm">Sale</a>
+            </div>
+            <div class="flex-none gap-2">
+                <label class="input input-bordered input-sm items-center gap-2 hidden md:flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 opacity-70" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z"/>
+                    </svg>
+                    <input type="text" class="grow" placeholder="Search products"/>
+                </label>
+                <button class="btn btn-ghost btn-sm">Sign in</button>
+                <button class="btn btn-ghost btn-circle btn-sm">
+                    <div class="indicator">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 9m5-9v9m4-9v9m4-9l2 9"/>
+                        </svg><span class="badge badge-sm badge-primary indicator-item">2</span>
+                    </div>
+                </button>
+                <div class="dropdown dropdown-end md:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-square btn-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-52">
+                        <li>
+                            <a>New</a>
+                        </li>
+                        <li>
+                            <a>Women</a>
+                        </li>
+                        <li>
+                            <a>Men</a>
+                        </li>
+                        <li>
+                            <a>Home</a>
+                        </li>
+                        <li>
+                            <a>Sale</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="flex-1">
+            <!-- Hero -->
+            <section class="max-w-6xl mx-auto px-4 py-10 lg:py-14 grid lg:grid-cols-2 gap-10 items-center">
+                <div class="space-y-6"><span class="badge badge-primary badge-outline">Spring Collection</span>
+                    <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+          Everyday essentials with a <span class="text-primary">brighter</span> feel. </h1>
+                    <p class="text-base-content/70 text-lg">
+          Curated basics, soft neutrals, and playful accents—designed to mix, match, and actually last. </p>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="btn btn-primary">Shop new arrivals</button>
+                        <button class="btn btn-outline">Browse bestsellers</button>
+                    </div>
+                    <div class="flex flex-wrap gap-6 items-center text-sm text-base-content/70">
+                        <div>
+                            <p class="font-semibold text-base-content">Free shipping</p>
+                            <p>On orders over $75</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-base-content">30‑day returns</p>
+                            <p>Easy, no‑stress process</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="card bg-base-200 shadow-sm">
+                            <figure class="h-40 overflow-hidden">
+                                <img class="w-full h-full object-cover" src="img/model-2911332_1280.jpg" alt="Outfit"/>
+                            </figure>
+                        </div>
+                        <div class="card bg-base-200 shadow-sm mt-6">
+                            <figure class="h-40 overflow-hidden">
+                                <img class="w-full h-full object-cover" src="img/man-3403180_1280.jpg" alt="Outfit"/>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="alert bg-primary/10 border border-primary/30 text-sm"><span class="font-semibold text-primary">Limited drop:</span><span>Pastel capsule set · Only 500 units worldwide.</span>
+                    </div>
+                </div>
+            </section>
+            <!-- Categories -->
+            <section class="bg-base-200/60 border-y border-base-300">
+                <div class="max-w-6xl mx-auto px-4 py-10 space-y-6">
+                    <div class="flex flex-wrap justify-between gap-4 items-end">
+                        <h2 class="text-2xl font-semibold">Shop by category</h2>
+                        <button class="btn btn-ghost btn-sm">View all</button>
+                    </div>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4"><a class="card bg-base-100 hover:shadow-md transition-shadow cursor-pointer"> <figure class="h-32 overflow-hidden">
+                                <img class="w-full h-full object-cover" src="https://images.pexels.com/photos/7671164/pexels-photo-7671164.jpeg" alt="Tops"/>
+                            </figure> <div class="card-body py-3 px-4">
+                                <p class="font-semibold text-sm">Tops</p>
+                                <p class="text-xs text-base-content/60">Soft tees, shirts, and layers</p>
+                            </div> </a><a class="card bg-base-100 hover:shadow-md transition-shadow cursor-pointer"> <figure class="h-32 overflow-hidden">
+                                <img class="w-full h-full object-cover" src="https://images.pexels.com/photos/7671167/pexels-photo-7671167.jpeg" alt="Bottoms"/>
+                            </figure> <div class="card-body py-3 px-4">
+                                <p class="font-semibold text-sm">Bottoms</p>
+                                <p class="text-xs text-base-content/60">Denim, chinos, and relaxed fits</p>
+                            </div> </a><a class="card bg-base-100 hover:shadow-md transition-shadow cursor-pointer"> <figure class="h-32 overflow-hidden">
+                                <img class="w-full h-full object-cover" src="https://images.pexels.com/photos/7671168/pexels-photo-7671168.jpeg" alt="Home"/>
+                            </figure> <div class="card-body py-3 px-4">
+                                <p class="font-semibold text-sm">Home</p>
+                                <p class="text-xs text-base-content/60">Throws, candles, and decor</p>
+                            </div> </a><a class="card bg-base-100 hover:shadow-md transition-shadow cursor-pointer"> <figure class="h-32 overflow-hidden">
+                                <img class="w-full h-full object-cover" src="https://images.pexels.com/photos/7671165/pexels-photo-7671165.jpeg" alt="Accessories"/>
+                            </figure> <div class="card-body py-3 px-4">
+                                <p class="font-semibold text-sm">Accessories</p>
+                                <p class="text-xs text-base-content/60">Bags, hats, and small goods</p>
+                            </div> </a>
+                    </div>
+                </div>
+            </section>
+            <!-- Featured products -->
+            <section class="max-w-6xl mx-auto px-4 py-10 space-y-6">
+                <div class="flex flex-wrap justify-between gap-4 items-end">
+                    <h2 class="text-2xl font-semibold">Featured picks</h2>
+                    <div class="flex gap-2 text-xs">
+                        <button class="btn btn-xs btn-outline">All</button>
+                        <button class="btn btn-xs btn-outline">Clothing</button>
+                        <button class="btn btn-xs btn-outline">Home</button>
+                    </div>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <!-- Product card -->
+                    <div class="card bg-base-100 border border-base-300">
+                        <figure class="h-40 overflow-hidden">
+                            <img class="w-full h-full object-cover" src="https://images.pexels.com/photos/7671163/pexels-photo-7671163.jpeg" alt="Product"/>
+                        </figure>
+                        <div class="card-body py-3 px-4">
+                            <p class="text-sm font-semibold">Soft Knit Crew</p>
+                            <p class="text-xs text-base-content/60">Cloud grey</p>
+                            <div class="flex items-center justify-between mt-2"><span class="font-semibold text-sm">$48</span>
+                                <button class="btn btn-xs btn-primary">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 border border-base-300">
+                        <figure class="h-40 overflow-hidden">
+                            <img class="w-full h-full object-cover" src="https://images.pexels.com/photos/7671162/pexels-photo-7671162.jpeg" alt="Product"/>
+                        </figure>
+                        <div class="card-body py-3 px-4">
+                            <p class="text-sm font-semibold">Relaxed Chino</p>
+                            <p class="text-xs text-base-content/60">Sandstone</p>
+                            <div class="flex items-center justify-between mt-2"><span class="font-semibold text-sm">$62</span>
+                                <button class="btn btn-xs btn-primary">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 border border-base-300">
+                        <figure class="h-40 overflow-hidden">
+                            <img class="w-full h-full object-cover" src="https://images.pexels.com/photos/7671161/pexels-photo-7671161.jpeg" alt="Product"/>
+                        </figure>
+                        <div class="card-body py-3 px-4">
+                            <p class="text-sm font-semibold">Textured Throw</p>
+                            <p class="text-xs text-base-content/60">Warm oat</p>
+                            <div class="flex items-center justify-between mt-2"><span class="font-semibold text-sm">$38</span>
+                                <button class="btn btn-xs btn-primary">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 border border-base-300">
+                        <figure class="h-40 overflow-hidden">
+                            <img class="w-full h-full object-cover" src="https://images.pexels.com/photos/7671160/pexels-photo-7671160.jpeg" alt="Product"/>
+                        </figure>
+                        <div class="card-body py-3 px-4">
+                            <p class="text-sm font-semibold">Canvas Tote</p>
+                            <p class="text-xs text-base-content/60">Natural</p>
+                            <div class="flex items-center justify-between mt-2"><span class="font-semibold text-sm">$32</span>
+                                <button class="btn btn-xs btn-primary">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Newsletter / CTA -->
+            <section class="bg-base-200/60 border-y border-base-300">
+                <div class="max-w-4xl mx-auto px-4 py-10 text-center space-y-4">
+                    <h2 class="text-2xl font-semibold">Stay in the loop</h2>
+                    <p class="text-base-content/70">
+          Be the first to know about new drops, restocks, and members‑only offers. </p>
+                    <form class="flex flex-col sm:flex-row gap-3 justify-center">
+                        <input type="email" placeholder="you@example.com" class="input input-bordered w-full sm:max-w-xs"/>
+                        <button class="btn btn-primary">Join the list</button>
+                    </form>
+                    <p class="text-xs text-base-content/50">We send 1–2 emails per month. No spam, ever.</p>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="footer p-8 bg-base-200 text-sm text-base-content/70">
+            <aside>
+                <p class="font-semibold">BrightCart</p>
+                <p>© <span id="year-shop"></span> BrightCart Co. All rights reserved.</p>
+            </aside>
+            <nav>
+                <h6 class="footer-title">Shop</h6><a class="link link-hover">New</a><a class="link link-hover">Gift cards</a><a class="link link-hover">Stores</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Support</h6><a class="link link-hover">Help center</a><a class="link link-hover">Shipping</a><a class="link link-hover">Returns</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Company</h6><a class="link link-hover">About</a><a class="link link-hover">Careers</a><a class="link link-hover">Press</a>
+            </nav>
+        </footer>
+        <script>
+    document.getElementById('year-shop').textContent = new Date().getFullYear();
+  </script>
+    </body>
+</html>

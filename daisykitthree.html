@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>DaisyUI Component Kit – Set 3 (Corporate White)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet"/>
+        <style>
+    .card-3d {
+      transform-style: preserve-3d;
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+    .card-3d:hover {
+      transform: translateY(-6px) rotateX(4deg) rotateY(-4deg);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+  </style>
+    </head>
+    <body class="bg-white text-base-content">
+        <!-- HEADER -->
+        <section class="max-w-6xl mx-auto px-6 py-10">
+            <h1 class="text-4xl font-extrabold tracking-tight">DAISYUI COMPONENT KIT — SET 3</h1>
+            <p class="text-base-content/60 mt-2">Corporate · White Theme · Fully Responsive · Mobile Hamburger Menus</p>
+        </section>
+        <hr class="border-base-300"/>
+        <!-- ================= NAVBARS ================= -->
+        <section class="max-w-6xl mx-auto px-6 py-12 space-y-6">
+            <h2 class="text-3xl font-bold tracking-tight">NAVBARS (6)</h2>
+            <!-- NAVBAR 1 — Corporate Clean -->
+            <div class="mockup-window border bg-base-200">
+                <div class="border-t border-base-300">
+                    <nav class="navbar bg-white shadow-sm">
+                        <div class="flex-1"><a class="text-xl font-bold">CorpBrand</a>
+                        </div>
+                        <!-- Desktop -->
+                        <div class="hidden md:flex gap-6"><a class="link link-hover">Solutions</a><a class="link link-hover">Pricing</a><a class="link link-hover">Contact</a>
+                        </div>
+                        <!-- Mobile -->
+                        <div class="md:hidden dropdown dropdown-end">
+                            <label tabindex="0" class="btn btn-ghost btn-square">
+                                ☰
+</label>
+                            <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-white rounded-box w-52">
+                                <li>
+                                    <a>Solutions</a>
+                                </li>
+                                <li>
+                                    <a>Pricing</a>
+                                </li>
+                                <li>
+                                    <a>Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- NAVBAR 2 — Logo Centered -->
+            <div class="mockup-window border bg-base-200">
+                <div class="border-t border-base-300">
+                    <nav class="navbar bg-white shadow-sm">
+                        <div class="flex-1 justify-center"><a class="text-xl font-semibold">CenterCorp</a>
+                        </div>
+                        <div class="md:hidden dropdown dropdown-end absolute right-4">
+                            <label tabindex="0" class="btn btn-ghost btn-square">☰</label>
+                            <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-white rounded-box w-52">
+                                <li>
+                                    <a>About</a>
+                                </li>
+                                <li>
+                                    <a>Careers</a>
+                                </li>
+                                <li>
+                                    <a>Support</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="hidden md:flex gap-6 absolute right-6"><a>About</a><a>Careers</a><a>Support</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- NAVBAR 3 — Split Corporate -->
+            <div class="mockup-window border bg-base-200">
+                <div class="border-t border-base-300">
+                    <nav class="navbar bg-white shadow-sm">
+                        <div class="hidden md:flex gap-4"><a>Overview</a><a>Docs</a>
+                        </div><a class="text-xl font-bold mx-auto">SplitCorp</a>
+                        <div class="hidden md:flex gap-4"><a>Login</a>
+                            <button class="btn btn-primary btn-sm">Sign Up</button>
+                        </div>
+                        <!-- Mobile -->
+                        <div class="md:hidden dropdown dropdown-end">
+                            <label tabindex="0" class="btn btn-ghost btn-square">☰</label>
+                            <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-white rounded-box w-52">
+                                <li>
+                                    <a>Overview</a>
+                                </li>
+                                <li>
+                                    <a>Docs</a>
+                                </li>
+                                <li>
+                                    <a>Login</a>
+                                </li>
+                                <li>
+                                    <a>Sign Up</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- NAVBAR 4 — Search Bar -->
+            <div class="mockup-window border bg-base-200">
+                <div class="border-t border-base-300">
+                    <nav class="navbar bg-white shadow-sm"><a class="text-xl font-bold">SearchCorp</a>
+                        <div class="hidden md:block w-1/3">
+                            <input type="text" placeholder="Search…" class="input input-bordered w-full"/>
+                        </div>
+                        <div class="md:hidden dropdown dropdown-end">
+                            <label tabindex="0" class="btn btn-ghost btn-square">☰</label>
+                            <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-white rounded-box w-52">
+                                <li>
+                                    <input type="text" placeholder="Search…" class="input input-bordered"/>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- NAVBAR 5 — Icon Navigation -->
+            <div class="mockup-window border bg-base-200">
+                <div class="border-t border-base-300">
+                    <nav class="navbar bg-white shadow-sm"><a class="text-xl font-bold">IconCorp</a>
+                        <div class="hidden md:flex gap-4">
+                            <button class="btn btn-ghost btn-circle">🔍</button>
+                            <button class="btn btn-ghost btn-circle">🔔</button>
+                            <button class="btn btn-primary btn-sm">Login</button>
+                        </div>
+                        <div class="md:hidden dropdown dropdown-end">
+                            <label tabindex="0" class="btn btn-ghost btn-square">☰</label>
+                            <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-white rounded-box w-52">
+                                <li>
+                                    <a>Search</a>
+                                </li>
+                                <li>
+                                    <a>Notifications</a>
+                                </li>
+                                <li>
+                                    <a>Login</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- NAVBAR 6 — Full Corporate Menu -->
+            <div class="mockup-window border bg-base-200">
+                <div class="border-t border-base-300">
+                    <nav class="navbar bg-white shadow-sm"><a class="text-xl font-bold">EnterpriseCorp</a>
+                        <div class="hidden md:flex gap-6"><a>Products</a><a>Industries</a><a>Resources</a><a>Company</a>
+                        </div>
+                        <div class="md:hidden dropdown dropdown-end">
+                            <label tabindex="0" class="btn btn-ghost btn-square">☰</label>
+                            <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-white rounded-box w-52">
+                                <li>
+                                    <a>Products</a>
+                                </li>
+                                <li>
+                                    <a>Industries</a>
+                                </li>
+                                <li>
+                                    <a>Resources</a>
+                                </li>
+                                <li>
+                                    <a>Company</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <hr class="border-base-300"/>
+        <!-- ================= HERO SECTIONS ================= -->
+        <section class="max-w-6xl mx-auto px-6 py-12 space-y-6">
+            <h2 class="text-3xl font-bold tracking-tight">HERO SECTIONS (6)</h2>
+            <!-- HERO 1 — Corporate Split -->
+            <div class="mockup-window border bg-base-200">
+                <div class="border-t border-base-300">
+                    <section class="grid md:grid-cols-2 items-center gap-10 px-6 py-20">
+                        <div class="space-y-4">
+                            <h1 class="text-5xl font-bold">Corporate Solutions</h1>
+                            <p class="text-base-content/60">Enterprise‑grade tools for modern teams.</p>
+                            <button class="btn btn-primary">Get Started</button>
+                        </div>
+                        <img src="https://via.placeholder.com/500" class="rounded-xl shadow-lg"/>
+                    </section>
+                </div>
+            </div>
+            <!-- HERO 2 — Clean Centered -->
+            <div class="mockup-window border bg-base-200">
+                <div class="border-t border-base-300">
+                    <section class="text-center px-6 py-20 space-y-4">
+                        <h1 class="text-5xl font-bold">Modern Business Tools</h1>
+                        <p class="text-base-content/60 max-w-xl mx-auto">Streamline your workflow with our suite of corporate‑ready solutions.</p>
+                        <button class="btn btn-primary">Learn More</button>
+                    </section>
+                </div>
+            </div>
+            <!-- HERO 3 — Image Banner -->
+            <div class="mockup-window border bg-base-200">
+                <div class="border-t border-base-300">
+                    <section class="relative">
+                        <img src="https://via.placeholder.com/1200x400" class="w-full"/>
+                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                            <h1 class="text-5xl font-bold text-white">Enterprise Performance</h1>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- HERO 4 — Left Text, Right Stats -->
+            <div class="mockup-window border bg-base-200">
+                <div class="border-t border-base-300">
+                    <section class="grid md:grid-cols-2 px-6 py-20 gap-10 items-center">
+                        <div class="space-y-4">
+                            <h1 class="text-5xl font-bold">Trusted Worldwide</h1>
+                            <p class="text-base-content/60">Our platform powers thousands of organizations globally.</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="p-6 bg-base-100 shadow rounded-xl text-center">
+                                <p class="text-3xl font-bold">12k+</p>
+                                <p class="text-base-content/60">Clients</p>
+                            </div>
+                            <div class="p-6 bg-base-100 shadow rounded-xl text-center">
+                                <p class="text-3xl font-bold">98%</p>
+                                <p class="text-base-content/60">Satisfaction</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- HERO 5 — Corporate Card Hero -->
+            <div class="mockup-window border bg-base-200">
+                <div class="border-t border-base-300">
+                    <section class="px-6 py-20 flex justify-center">
+                        <div class="card bg-base-100 shadow-xl p-10 max-w-xl space-y-4">
+                            <h1 class="text-4xl font-bold">Enterprise Dashboard</h1>
+                            <p class="text-base-content/60">A unified view of your business performance.</p>
+                            <button class="btn btn-primary">View Demo</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- HERO 6 — Minimal Corporate -->
+            <div class="mockup-window border bg-base-200">
+                <div class="border-t border-base-300">
+                    <section class="px-6 py-20 space-y-4">
+                        <h1 class="text-5xl font-bold">Corporate Minimal Hero</h1>
+                        <p class="text-base-content/60 max-w-xl">A clean, distraction‑free hero for professional websites.</p>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <hr class="border-base-300"/>
+        <!-- ================= FORMS ================= -->
+        <section class="max-w-6xl mx-auto px-6 py-12 space-y-6">
+            <h2 class="text-3xl font-bold tracking-tight">FORMS (6)</h2>
+            <!-- FORM 1 — Corporate Login -->
+            <div class="mockup-window border bg-base-200">
+                <div class="border-t border-base-300">
+                    <form class="max-w-md p-8 bg-white shadow space-y-4">
+                        <h3 class="text-xl font-bold">Corporate Login</h3>
+                        <input class="input input-bordered w-full" placeholder="Email"/>
+                        <input class="input input-bordered w-full" placeholder="Password" type="password"/>
+                        <button class="btn btn-primary w-full">Login</button>
+                    </form>
+                </div>
+            </div>
+            <!-- FORM 2 — Contact Form -->
+            <div class="mockup-window border bg-base-200">
+                <div class="border-t border-base-300">
+                    <form class="max-w-lg p-8 bg-white shadow space-y-4">
+                        <h3 class="text-xl font-bold">Contact Us</h3>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <input class="input input-bordered" placeholder="First Name"/>
+                            <input class="input input-bordered" placeholder="Last Name"/>
+                        </div>
+                        <input class="input input-bordered w-full" placeholder="Email"/>
+                        <textarea class="textarea textarea-bordered w-full" placeholder="Message"></textarea>
+                        <button class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <!-- FORM 3 — Newsletter -->
+            <div class="mockup-window border bg-base-200">
+                <div class="border-t border-base-300">
+                    <form class="flex flex-col sm:flex-row gap-4 p-8 bg-white shadow max-w-xl">
+                        <input class="input input-bordered flex-1" placeholder="Email"/>
+                        <button class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <!-- FORM 4 — Search Filters -->
+            <div class="mockup-window border bg-base-200">
+                <div class="border-t border-base-300">
+                    <form class="grid md:grid-cols-4 gap-4 p-8 bg-white shadow">
+                        <input class="input input-bordered md:col-span-2" placeholder="Search…"/>
+                        <select class="select select-bordered">
+                            <option>All</option>
+                            <option>Finance</option>
+                            <option>Tech</option>
+                        </select>
+                        <button class="btn btn-primary">Filter</button>
+                    </form>
+                </div>
+            </div>
+            <!-- FORM 5 — Underline Form -->
+            <div class="mockup-window border bg-base-200">
+                <div class="border-t border-base-300">
+                    <form class="max-w-md p-8 bg-white shadow space-y-4">
+                        <input class="input input-ghost border-b border-base-content/40 rounded-none" placeholder="Email"/>
+                        <button class="btn btn-primary w-full">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <!-- FORM 6 — Step Form -->
+            <div class="mockup-window border bg-base-200">
+                <div class="border-t border-base-300">
+                    <form class="max-w-md p-8 bg-white shadow space-y-4">
+                        <progress class="progress progress-primary w-full" value="33" max="100"></progress>
+                        <input class="input input-bordered" placeholder="Project Name"/>
+                        <button class="btn btn-primary w-full">Next</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <hr class="border-base-300"/>
+        <!-- ================= CAROUSELS ================= -->
+        <section class="max-w-6xl mx-auto px-6 py-12 space-y-6">
+            <h2 class="text-3xl font-bold tracking-tight">CAROUSELS (6)</h2>
+            <!-- CAROUSEL 1 — Full Width -->
+            <div class="mockup-window border bg-base-200">
+                <div class="border-t border-base-300">
+                    <div class="carousel w-full">
+                        <div class="carousel-item w-full">
+                            <img src="https://via.placeholder.com/1200x300" class="w-full"/>
+                        </div>
+                        <div class="carousel-item w-full">
+                            <img src="https://via.placeholder.com/1200x300" class="w-full"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CAROUSEL 2 — Cards -->
+            <div class="mockup-window border bg-base-200">
+                <div class="border-t border-base-300">
+                    <div class="carousel carousel-center p-4 space-x-4 bg-white rounded-box">
+                        <div class="card bg-base-200 w-64 p-6">Card 1</David>

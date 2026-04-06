@@ -1,0 +1,106 @@
+{
+  "name": "DaisyUI Dark Library",
+  "id": "daisyui-dark-library",
+  "version": "1.0.0",
+  "description": "A custom DaisyUI Dark component library for Pinegrow with drag-and-drop components.",
+  "categories": [
+    {
+      "name": "Navigation",
+      "components": [
+        { "name": "Navbar 1", "file": "components/navigation/navbar-1.html", "image": "components/navigation/thumbnails/navbar-1.png" },
+        { "name": "Navbar 2", "file": "components/navigation/navbar-2.html", "image": "components/navigation/thumbnails/navbar-2.png" },
+        { "name": "Navbar Transparent", "file": "components/navigation/navbar-transparent.html", "image": "components/navigation/thumbnails/navbar-transparent.png" },
+        { "name": "Navbar Mobile", "file": "components/navigation/navbar-mobile.html", "image": "components/navigation/thumbnails/navbar-mobile.png" },
+        { "name": "Navbar Dashboard", "file": "components/navigation/navbar-dashboard.html", "image": "components/navigation/thumbnails/navbar-dashboard.png" },
+        { "name": "Navbar Split", "file": "components/navigation/navbar-split.html", "image": "components/navigation/thumbnails/navbar-split.png" },
+        { "name": "Sidebar Layout", "file": "components/navigation/sidebar-layout.html", "image": "components/navigation/thumbnails/sidebar-layout.png" }
+      ]
+    },
+    {
+      "name": "Hero Sections",
+      "components": [
+        { "name": "Hero A", "file": "components/hero/hero-a.html", "image": "components/hero/thumbnails/hero-a.png" },
+        { "name": "Hero B", "file": "components/hero/hero-b.html", "image": "components/hero/thumbnails/hero-b.png" },
+        { "name": "Hero Centered", "file": "components/hero/hero-centered.html", "image": "components/hero/thumbnails/hero-centered.png" },
+        { "name": "Hero Image Right", "file": "components/hero/hero-image-right.html", "image": "components/hero/thumbnails/hero-image-right.png" }
+      ]
+    },
+    {
+      "name": "Layouts",
+      "components": [
+        { "name": "Two Column Layout", "file": "components/layouts/layout-two-column.html", "image": "components/layouts/thumbnails/layout-two-column.png" },
+        { "name": "Three Column Layout", "file": "components/layouts/layout-three-column.html", "image": "components/layouts/thumbnails/layout-three-column.png" },
+        { "name": "App Shell Layout", "file": "components/layouts/layout-app-shell.html", "image": "components/layouts/thumbnails/layout-app-shell.png" }
+      ]
+    },
+    {
+      "name": "Cards",
+      "components": [
+        { "name": "Basic Card", "file": "components/cards/card-basic.html", "image": "components/cards/thumbnails/card-basic.png" },
+        { "name": "Card with Actions", "file": "components/cards/card-actions.html", "image": "components/cards/thumbnails/card-actions.png" },
+        { "name": "Card with Image", "file": "components/cards/card-image.html", "image": "components/cards/thumbnails/card-image.png" }
+      ]
+    },
+    {
+      "name": "Buttons",
+      "components": [
+        { "name": "Button Set", "file": "components/buttons/button-set.html", "image": "components/buttons/thumbnails/button-set.png" }
+      ]
+    },
+    {
+      "name": "Forms",
+      "components": [
+        { "name": "Login Form", "file": "components/forms/login-form.html", "image": "components/forms/thumbnails/login-form.png" },
+        { "name": "Contact Form", "file": "components/forms/contact-form.html", "image": "components/forms/thumbnails/contact-form.png" }
+      ]
+    },
+    {
+      "name": "Modals",
+      "components": [
+        { "name": "Basic Modal", "file": "components/modals/modal-basic.html", "image": "components/modals/thumbnails/modal-basic.png" },
+        { "name": "Dark Overlay Modal", "file": "components/modals/modal-dark-overlay.html", "image": "components/modals/thumbnails/modal-dark-overlay.png" }
+      ]
+    },
+    {
+      "name": "Tabs & Accordions",
+      "components": [
+        { "name": "Tabs", "file": "components/tabs-accordions/tabs.html", "image": "components/tabs-accordions/thumbnails/tabs.png" },
+        { "name": "Accordion", "file": "components/tabs-accordions/accordion.html", "image": "components/tabs-accordions/thumbnails/accordion.png" }
+      ]
+    },
+    {
+      "name": "Pricing",
+      "components": [
+        { "name": "Pricing Table", "file": "components/pricing/pricing-table.html", "image": "components/pricing/thumbnails/pricing-table.png" }
+      ]
+    },
+    {
+      "name": "Dashboard Widgets",
+      "components": [
+        { "name": "Stats Grid", "file": "components/dashboard/stats-grid.html", "image": "components/dashboard/thumbnails/stats-grid.png" },
+        { "name": "Activity Feed", "file": "components/dashboard/activity-feed.html", "image": "components/dashboard/thumbnails/activity-feed.png" },
+        { "name": "Chart Placeholder", "file": "components/dashboard/chart-placeholder.html", "image": "components/dashboard/thumbnails/chart-placeholder.png" },
+        { "name": "KPI Row", "file": "components/dashboard/kpi-row.html", "image": "components/dashboard/thumbnails/kpi-row.png" }
+      ]
+    },
+    {
+      "name": "Alerts",
+      "components": [
+        { "name": "Info Alert", "file": "components/alerts/alert-info.html", "image": "components/alerts/thumbnails/alert-info.png" },
+        { "name": "Success Alert", "file": "components/alerts/alert-success.html", "image": "components/alerts/thumbnails/alert-success.png" },
+        { "name": "Warning Alert", "file": "components/alerts/alert-warning.html", "image": "components/alerts/thumbnails/alert-warning.png" },
+        { "name": "Error Alert", "file": "components/alerts/alert-error.html", "image": "components/alerts/thumbnails/alert-error.png" }
+      ]
+    },
+    {
+      "name": "Animations",
+      "components": [
+        { "name": "Fade In", "file": "components/animations/fade-in.html", "image": "components/animations/thumbnails/fade-in.png" },
+        { "name": "Slide Up", "file": "components/animations/slide-up.html", "image": "components/animations/thumbnails/slide-up.png" },
+        { "name": "Scale In", "file": "components/animations/scale-in.html", "image": "components/animations/thumbnails/scale-in.png" },
+        { "name": "Hover Lift", "file": "components/animations/hover-lift.html", "image": "components/animations/thumbnails/hover-lift.png" },
+        { "name": "Pulse Badge", "file": "components/animations/pulse-badge.html", "image": "components/animations/thumbnails/pulse-badge.png" }
+      ]
+    }
+  ]
+}

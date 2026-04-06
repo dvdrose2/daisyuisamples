@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="business">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>DataForge Cloud – Data Management Platform</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet"/>
+    </head>
+    <body class="min-h-screen flex flex-col bg-base-100">
+        <!-- Navbar -->
+        <header class="navbar bg-base-100 border-b border-base-300 sticky top-0 z-30">
+            <div class="flex-1"><a class="btn btn-ghost text-xl font-bold tracking-tight"> <span class="text-primary">DataForge</span> Cloud </a>
+            </div>
+            <div class="hidden md:flex gap-2"><a class="btn btn-ghost btn-sm">Platform</a><a class="btn btn-ghost btn-sm">Solutions</a><a class="btn btn-ghost btn-sm">Pricing</a><a class="btn btn-ghost btn-sm">Resources</a>
+            </div>
+            <div class="flex-none gap-2"><a class="btn btn-ghost btn-sm">Sign in</a>
+                <button class="btn btn-primary btn-sm">Book a demo</button>
+                <div class="dropdown dropdown-end md:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-square btn-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-52">
+                        <li>
+                            <a>Platform</a>
+                        </li>
+                        <li>
+                            <a>Solutions</a>
+                        </li>
+                        <li>
+                            <a>Pricing</a>
+                        </li>
+                        <li>
+                            <a>Resources</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="flex-1">
+            <!-- Hero -->
+            <section class="max-w-6xl mx-auto px-4 py-12 lg:py-16 grid lg:grid-cols-2 gap-10 items-center">
+                <div class="space-y-6"><span class="badge badge-primary badge-outline">Enterprise Data Management</span>
+                    <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+          Turn scattered data into a <span class="text-primary">single source of truth</span>. </h1>
+                    <p class="text-base-content/70 text-lg">
+          DataForge Cloud unifies your pipelines, governance, and analytics into one secure, real‑time platform—so teams can trust every decision. </p>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="btn btn-primary">Schedule a live demo</button>
+                        <button class="btn btn-outline">Download product brief</button>
+                    </div>
+                    <div class="flex flex-wrap gap-6 items-center text-sm text-base-content/60">
+                        <div>
+                            <p class="font-semibold text-base-content">99.99% uptime</p>
+                            <p>Global SLA‑backed infrastructure</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-base-content">SOC 2 Type II</p>
+                            <p>Security & compliance ready</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card bg-base-200 shadow-xl border border-base-300">
+                        <div class="card-body space-y-4">
+                            <h2 class="card-title">Unified data observability</h2>
+                            <p class="text-sm text-base-content/70">
+              Monitor pipelines, lineage, and quality from a single dashboard. Get alerted before issues impact your business. </p>
+                            <div class="grid grid-cols-2 gap-4 text-sm">
+                                <div class="stat bg-base-100 rounded-box border border-base-300">
+                                    <div class="stat-title">Pipelines</div>
+                                    <div class="stat-value text-primary">1.2K</div>
+                                    <div class="stat-desc">Active across regions</div>
+                                </div>
+                                <div class="stat bg-base-100 rounded-box border border-base-300">
+                                    <div class="stat-title">Data freshness</div>
+                                    <div class="stat-value text-primary">99%</div>
+                                    <div class="stat-desc">Under 5 minutes</div>
+                                </div>
+                            </div>
+                            <div class="divider my-2"></div>
+                            <div class="flex items-center justify-between text-xs text-base-content/60"><span>Connect Snowflake, BigQuery, Redshift, and more in minutes.</span><a class="link link-primary">View integrations</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Logos -->
+            <section class="bg-base-200/40 border-y border-base-300">
+                <div class="max-w-6xl mx-auto px-4 py-8 space-y-4">
+                    <p class="text-center text-sm text-base-content/60">Trusted by data‑driven teams at</p>
+                    <div class="flex flex-wrap justify-center gap-6 opacity-80 text-xs md:text-sm"><span class="font-semibold tracking-wide">Northline Bank</span><span class="font-semibold tracking-wide">Helio Analytics</span><span class="font-semibold tracking-wide">Bluegrid Health</span><span class="font-semibold tracking-wide">Orbit Logistics</span>
+                    </div>
+                </div>
+            </section>
+            <!-- Solutions -->
+            <section class="max-w-6xl mx-auto px-4 py-12 space-y-8">
+                <div class="flex flex-wrap justify-between gap-4 items-end">
+                    <div>
+                        <h2 class="text-2xl font-semibold">Solutions for every data team</h2>
+                        <p class="text-base-content/70 text-sm md:text-base">
+            From ingestion to governance, DataForge Cloud centralizes your data lifecycle. </p>
+                    </div>
+                    <button class="btn btn-ghost btn-sm">View all solutions</button>
+                </div>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="card bg-base-200 border border-base-300">
+                        <div class="card-body">
+                            <h3 class="card-title text-base">Data Engineering</h3>
+                            <p class="text-sm text-base-content/70">
+              Build resilient pipelines with versioned workflows, monitoring, and automated retries. </p>
+                            <ul class="text-xs text-base-content/70 space-y-1 mt-2">
+                                <li>• Visual pipeline builder</li>
+                                <li>• Git‑backed deployments</li>
+                                <li>• Real‑time alerts</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card bg-base-200 border border-base-300">
+                        <div class="card-body">
+                            <h3 class="card-title text-base">Analytics & BI</h3>
+                            <p class="text-sm text-base-content/70">
+              Deliver consistent metrics with governed semantic layers and certified datasets. </p>
+                            <ul class="text-xs text-base-content/70 space-y-1 mt-2">
+                                <li>• Central metric definitions</li>
+                                <li>• BI tool integrations</li>
+                                <li>• Access controls</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card bg-base-200 border border-base-300">
+                        <div class="card-body">
+                            <h3 class="card-title text-base">Governance & Compliance</h3>
+                            <p class="text-sm text-base-content/70">
+              Track lineage, classify sensitive data, and automate policy enforcement. </p>
+                            <ul class="text-xs text-base-content/70 space-y-1 mt-2">
+                                <li>• Column‑level lineage</li>
+                                <li>• PII detection</li>
+                                <li>• Audit‑ready reports</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Pricing teaser -->
+            <section class="bg-base-200/40 border-y border-base-300">
+                <div class="max-w-5xl mx-auto px-4 py-12 grid md:grid-cols-3 gap-6 items-stretch">
+                    <div class="md:col-span-1 space-y-3">
+                        <h2 class="text-2xl font-semibold">Simple, transparent pricing</h2>
+                        <p class="text-sm text-base-content/70">
+            Start with a pilot, scale to enterprise. Only pay for the data you manage. </p>
+                        <button class="btn btn-outline btn-sm">Compare plans</button>
+                    </div>
+                    <div class="card bg-base-100 border border-primary md:col-span-2">
+                        <div class="card-body md:flex md:items-center md:justify-between gap-6">
+                            <div>
+                                <h3 class="card-title text-base">Growth</h3>
+                                <p class="text-sm text-base-content/70">
+                For teams centralizing data across 3–10 sources. </p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-3xl font-bold">$899<span class="text-sm font-normal text-base-content/60">/mo</span></p>
+                                <p class="text-xs text-base-content/60">Billed annually</p>
+                            </div>
+                            <div class="space-y-2 text-xs text-base-content/70">
+                                <p>• Up to 50 pipelines</p>
+                                <p>• 5 workspaces</p>
+                                <p>• Priority support</p>
+                            </div>
+                            <button class="btn btn-primary">Talk to sales</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- CTA -->
+            <section class="max-w-5xl mx-auto px-4 py-12 text-center space-y-4">
+                <h2 class="text-2xl font-semibold">Ready to see your data in one place?</h2>
+                <p class="text-base-content/70">
+        Get a tailored walkthrough of DataForge Cloud with your own use cases and stack. </p>
+                <button class="btn btn-primary">Book a 30‑minute demo</button>
+                <p class="text-xs text-base-content/50">No obligation. Invite your data, analytics, and security leads.</p>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="footer p-8 bg-base-200 text-sm text-base-content/70">
+            <aside>
+                <p class="font-semibold">DataForge Cloud</p>
+                <p>© <span id="year-business"></span> DataForge Labs, Inc. All rights reserved.</p>
+            </aside>
+            <nav>
+                <h6 class="footer-title">Product</h6><a class="link link-hover">Platform</a><a class="link link-hover">Security</a><a class="link link-hover">Status</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Company</h6><a class="link link-hover">About</a><a class="link link-hover">Careers</a><a class="link link-hover">Press</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Resources</h6><a class="link link-hover">Docs</a><a class="link link-hover">Guides</a><a class="link link-hover">Contact</a>
+            </nav>
+        </footer>
+        <script>
+    document.getElementById('year-business').textContent = new Date().getFullYear();
+  </script>
+    </body>
+</html>

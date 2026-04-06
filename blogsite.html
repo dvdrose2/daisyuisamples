@@ -1,0 +1,164 @@
+<html lang="en" data-theme="dark">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Midnight Notes – Modern Tech Blog</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet"/>
+    </head>
+    <body class="min-h-screen flex flex-col bg-base-100">
+        <!-- Navbar -->
+        <header class="navbar bg-base-100 border-b border-base-300 sticky top-0 z-30">
+            <div class="flex-1"><a class="btn btn-ghost text-xl font-bold tracking-tight">Daisy<span class="text-primary">Ui Blog</span></a>
+            </div>
+            <div class="hidden md:flex gap-2"><a class="btn btn-ghost btn-sm" href="index.html">Home</a><a class="btn btn-ghost btn-sm" href="blogsite.html">BlogSite</a><a class="btn btn-ghost btn-sm" href="business.html">Business</a><a class="btn btn-ghost btn-sm" href="fitness.html">Fitness</a>
+                <a class="btn btn-ghost btn-sm" href="shopping.html">Shopping</a>
+            </div>
+            <div class="flex-none gap-2">
+                <label class="input input-bordered input-sm items-center gap-2 hidden md:flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 opacity-70" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z"/>
+                    </svg>
+                    <input type="text" class="grow" placeholder="Search articles"/>
+                </label>
+                <button class="btn btn-primary btn-sm">Subscribe</button>
+                <div class="dropdown dropdown-end md:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-square btn-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-52">
+                        <li>
+                            <a>Home</a>
+                        </li>
+                        <li>
+                            <a>Articles</a>
+                        </li>
+                        <li>
+                            <a>Topics</a>
+                        </li>
+                        <li>
+                            <a>About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- Hero -->
+        <main class="flex-1">
+            <section class="max-w-6xl mx-auto px-4 py-10 lg:py-14 grid lg:grid-cols-2 gap-10 items-center">
+                <div class="space-y-5"><span class="badge badge-primary badge-outline">Featured Story</span>
+                    <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+          Designing for the <span class="text-primary">Late‑Night</span> Internet. </h1>
+                    <p class="text-base-content/70 text-lg">
+          Deep dives into design systems, dark‑mode UX, and the craft of building interfaces that feel alive at 2 a.m. </p>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="btn btn-primary">Read Featured Article</button>
+                        <button class="btn btn-ghost">Browse All Posts</button>
+                    </div>
+                    <div class="flex flex-wrap gap-3 items-center text-sm text-base-content/60">
+                        <div class="avatar-group -space-x-3 rtl:space-x-reverse">
+                            <div class="avatar">
+                                <div class="w-8">
+                                    <img src="https://api.dicebear.com/9.x/identicon/svg?seed=author1" alt="Author"/>
+                                </div>
+                            </div>
+                            <div class="avatar">
+                                <div class="w-8">
+                                    <img src="https://api.dicebear.com/9.x/identicon/svg?seed=author2" alt="Author"/>
+                                </div>
+                            </div>
+                            <div class="avatar placeholder">
+                                <div class="w-8 bg-neutral text-neutral-content"><span>+9</span>
+                                </div>
+                            </div>
+                        </div><span>Trusted by night‑owl designers and developers worldwide.</span>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <article class="card bg-base-200 shadow-xl">
+                        <figure class="h-52 overflow-hidden">
+                            <img class="w-full h-full object-cover" src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg" alt="Dark UI"/>
+                        </figure>
+                        <div class="card-body">
+                            <div class="flex gap-2 flex-wrap text-xs"><span class="badge badge-outline">Design Systems</span><span class="badge badge-outline">Dark Mode</span><span class="badge badge-outline">Accessibility</span>
+                            </div>
+                            <h2 class="card-title">
+              Building Dark‑Mode Systems That Don’t Feel Like an Afterthought </h2>
+                            <p class="text-base-content/70">
+              A practical guide to color tokens, contrast, and motion that respects late‑night focus. </p>
+                            <div class="card-actions justify-between items-center text-xs text-base-content/60"><span>12 min read · Updated yesterday</span><a class="link link-primary">Read now</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!-- Topics & Latest Posts -->
+            <section class="bg-base-200/40 border-y border-base-300">
+                <div class="max-w-6xl mx-auto px-4 py-10 space-y-8">
+                    <div class="flex flex-wrap items-center justify-between gap-4">
+                        <h2 class="text-xl font-semibold">Browse by topic</h2>
+                        <div class="flex flex-wrap gap-2">
+                            <button class="btn btn-xs btn-outline">UI Design</button>
+                            <button class="btn btn-xs btn-outline">Front‑End</button>
+                            <button class="btn btn-xs btn-outline">Systems</button>
+                            <button class="btn btn-xs btn-outline">Case Studies</button>
+                            <button class="btn btn-xs btn-outline">Process</button>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <!-- Post cards -->
+                        <article class="card bg-base-100 border border-base-300">
+                            <div class="card-body"><span class="badge badge-sm badge-primary badge-outline mb-2">Case Study</span>
+                                <h3 class="card-title text-base">From Chaos to System: Refactoring a Legacy Design Library</h3>
+                                <p class="text-sm text-base-content/70">
+                How we migrated a sprawling UI kit into a coherent, theme‑able system in six weeks. </p>
+                                <div class="flex justify-between items-center text-xs text-base-content/60"><span>8 min read</span><a class="link link-primary">Read</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card bg-base-100 border border-base-300">
+                            <div class="card-body"><span class="badge badge-sm badge-secondary badge-outline mb-2">Front‑End</span>
+                                <h3 class="card-title text-base">DaisyUI + Tailwind: Shipping Dark‑Mode Layouts Fast</h3>
+                                <p class="text-sm text-base-content/70">
+                A practical workflow for building production‑ready dark layouts with component primitives. </p>
+                                <div class="flex justify-between items-center text-xs text-base-content/60"><span>6 min read</span><a class="link link-primary">Read</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card bg-base-100 border border-base-300">
+                            <div class="card-body"><span class="badge badge-sm badge-accent badge-outline mb-2">Process</span>
+                                <h3 class="card-title text-base">Writing at Night: A Ritual for Better Product Thinking</h3>
+                                <p class="text-sm text-base-content/70">
+                Why late‑night writing sessions can sharpen your product sense and storytelling. </p>
+                                <div class="flex justify-between items-center text-xs text-base-content/60"><span>5 min read</span><a class="link link-primary">Read</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- Newsletter -->
+            <section class="max-w-3xl mx-auto px-4 py-12 text-center space-y-4">
+                <h2 class="text-2xl font-semibold">Stay in the loop after midnight</h2>
+                <p class="text-base-content/70">
+        One thoughtful email per week. No noise, just deep dives on design, systems, and front‑end craft. </p>
+                <form class="flex flex-col sm:flex-row gap-3 justify-center">
+                    <input type="email" placeholder="you@example.com" class="input input-bordered w-full sm:max-w-xs"/>
+                    <button class="btn btn-primary">Get the newsletter</button>
+                </form>
+                <p class="text-xs text-base-content/50">No spam. Unsubscribe anytime.</p>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="footer footer-center p-6 bg-base-200 text-base-content/70 text-sm">
+            <nav class="flex flex-wrap justify-center gap-4"><a class="link link-hover">About</a><a class="link link-hover">Archive</a><a class="link link-hover">RSS</a><a class="link link-hover">Contact</a>
+            </nav>
+            <p>© <span id="year-blog"></span> David Rose. My Daisy Ui Practice Site.</p>
+        </footer>
+        <script>
+    document.getElementById('year-blog').textContent = new Date().getFullYear();
+  </script>
+    </body>
+</html>
